@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+path {
+  fill: none;
+  stroke: #ed3700;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+/* axis contour */
+.axis path {
+  stroke: #706f6f;
+  stroke-width: 0.7;
+  shape-rendering: crispEdges;
+}
+
+/* axis text */
+.axis text {
+  fill: #2b2929;
+  font-family: Georgia;
+  font-size: 120%;
+}
