@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/VegPriceLookup/static/css/main.f6f92c4a.chunk.css",
+    "main.js": "/VegPriceLookup/static/js/main.d6ff4085.chunk.js",
+    "main.js.map": "/VegPriceLookup/static/js/main.d6ff4085.chunk.js.map",
+    "runtime-main.js": "/VegPriceLookup/static/js/runtime-main.cb4a203f.js",
+    "runtime-main.js.map": "/VegPriceLookup/static/js/runtime-main.cb4a203f.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/VegPriceLookup/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.62d06556.chunk.js": "/VegPriceLookup/static/js/2.62d06556.chunk.js",
+    "static/js/2.62d06556.chunk.js.map": "/VegPriceLookup/static/js/2.62d06556.chunk.js.map",
+    "static/js/3.44d0e724.chunk.js": "/VegPriceLookup/static/js/3.44d0e724.chunk.js",
+    "static/js/3.44d0e724.chunk.js.map": "/VegPriceLookup/static/js/3.44d0e724.chunk.js.map",
+    "index.html": "/VegPriceLookup/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/VegPriceLookup/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.f6f92c4a.chunk.css.map": "/VegPriceLookup/static/css/main.f6f92c4a.chunk.css.map",
+    "static/js/2.62d06556.chunk.js.LICENSE.txt": "/VegPriceLookup/static/js/2.62d06556.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb4a203f.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.62d06556.chunk.js",
+    "static/css/main.f6f92c4a.chunk.css",
+    "static/js/main.d6ff4085.chunk.js"
+  ]
+}
