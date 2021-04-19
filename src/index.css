@@ -1,3 +1,5 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -14,7 +16,7 @@ code {
 
 path {
   fill: none;
-  stroke: #ed3700;
+  stroke: #769db9;
 }
 
 .line {
@@ -25,7 +27,7 @@ path {
 
 /* axis contour */
 .axis path {
-  stroke: #706f6f;
+  stroke: #2e2e2e;
   stroke-width: 0.7;
   shape-rendering: crispEdges;
 }
@@ -35,4 +37,13 @@ path {
   fill: #2b2929;
   font-family: Georgia;
   font-size: 120%;
+}
+
+circle {
+  transition: all 0.3s;
+}
+
+text {
+  width: 100px;
+  text-align: center;
 }
