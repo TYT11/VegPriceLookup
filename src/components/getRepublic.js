@@ -12,6 +12,12 @@ export function getAD(date) {
   return adDate;
 }
 
+export function getDateFormat(date) {
+  const month = date.getMonth() + 1;
+  const dateOfMonth = date.getDate();
+  return `${month}/${dateOfMonth}`;
+}
+
 export function getCommon(data, type) {
   const appearences = {};
   data.forEach((item) => {
@@ -22,7 +28,6 @@ export function getCommon(data, type) {
   const appearencesOrder = Object.entries(appearences).sort(
     ([, v1], [, v2]) => v2 - v1
   );
-  console.log(appearencesOrder);
   const maximumPair =
     appearencesOrder.length > 0 ? appearencesOrder[0][0] : false;
 
