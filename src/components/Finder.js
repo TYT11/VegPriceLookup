@@ -60,8 +60,8 @@ export default function Finder() {
   return (
     <div className="mt-4">
       <div className="mb-3">
-        <div className="h3">臺灣近期菜價查詢</div>
-        <div className="h5">Taiwan Produce Recent Price Lookup</div>
+        <div className="h3">近期菜價查詢</div>
+        <div className="h5">Produce Recent Price Lookup</div>
       </div>
       <form
         className="mb-3"
@@ -134,7 +134,7 @@ export default function Finder() {
           />
           <button
             type="submit"
-            class="btn btn-outline-primary ml-2 mr-2 "
+            class="btn btn-outline-primary ml-2 mr-2  flex-grow-1"
             style={{ fontSize: "1rem", width: "4rem" }}
           >
             查詢

@@ -23,7 +23,7 @@ export default function LineChart({ cropData }) {
 
   useEffect(() => {
     if (data.length > 0) {
-      const m = [20, 20, 20, 20];
+      const m = [20, 20, 20, 50];
       const w = parseInt(d3.select(".App").style("width"), 10) - 40;
       const h = 400;
 
@@ -34,7 +34,7 @@ export default function LineChart({ cropData }) {
         .attr("height", h);
 
       const x = d3.scaleTime().rangeRound([m[3], w - m[1] - m[3]]);
-      const y = d3.scaleLinear().rangeRound([h, m[0]]);
+      const y = d3.scaleLinear().rangeRound([h, m[0] + m[2]]);
 
       x.domain(
         d3.extent(data, function (d) {
