@@ -24,15 +24,14 @@ export default function LineChart({ cropData }) {
   useEffect(() => {
     if (data.length > 0) {
       const m = [20, 20, 20, 20];
-      const w = 1000;
-      const h = 500;
+      const w = parseInt(d3.select(".App").style("width"), 10) - 40;
+      const h = 400;
 
       const svg = d3
         .select("#linechart")
         .append("svg")
         .attr("width", w - m[1])
-        .attr("height", h)
-        .attr("transform", "translate(" + m[1] + "," + m[0] + ")");
+        .attr("height", h);
 
       const x = d3.scaleTime().rangeRound([m[3], w - m[1] - m[3]]);
       const y = d3.scaleLinear().rangeRound([h, m[0]]);
@@ -50,7 +49,11 @@ export default function LineChart({ cropData }) {
       ]);
 
       const yaxis = d3.axisLeft().scale(y);
-      const xaxis = d3.axisBottom().scale(x);
+      const xaxis = d3
+        .axisBottom()
+        .scale(x)
+        .tickFormat(d3.timeFormat("%m/%d"))
+        .ticks(Math.max((w / 80).toFixed(0), 5));
 
       svg
         .append("g")
@@ -153,7 +156,7 @@ export default function LineChart({ cropData }) {
   }, [data]);
 
   return (
-    <div id="linechart">
+    <div id="linechart" className="d-flex justify-content-center">
       {data.length === 0 ? (
         <div>指定日期內該地區沒有價格資料，換個地區試試！</div>
       ) : (

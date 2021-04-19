@@ -54,7 +54,6 @@ export default function Finder() {
     const api = `https://agridata.coa.gov.tw/api/v1/AgriProductsTransType/?Start_time=${crop.startDate}&End_time=${crop.endDate}&MarketName=${crop.city}&CropName=${crop.crop}`;
     axios.get(api).then((res) => {
       setCropData(res.data.Data);
-      console.log(api, res.data.Data);
     });
   };
 
@@ -109,9 +108,9 @@ export default function Finder() {
           </select>
         </div>
 
-        <div className="mt-2 d-flex justify-content-center align-items-center">
+        <div className="mt-2 mr-2 ml-2 d-flex justify-content-center align-items-center">
           <input
-            className="ml-2 mr-2"
+            className="ml-2 mr-2 flex-grow-1"
             type="date"
             min={daysPrior}
             defaultValue={daysPrior}
@@ -123,7 +122,7 @@ export default function Finder() {
           />{" "}
           至{" "}
           <input
-            className="ml-2 mr-2"
+            className="ml-2 mr-2 flex-grow-1"
             type="date"
             max={today}
             defaultValue={today}
@@ -135,8 +134,8 @@ export default function Finder() {
           />
           <button
             type="submit"
-            class="btn btn-outline-primary ml-2 mr-2"
-            style={{ fontSize: "1rem", width: "5rem" }}
+            class="btn btn-outline-primary ml-2 mr-2 "
+            style={{ fontSize: "1rem", width: "4rem" }}
           >
             查詢
           </button>
