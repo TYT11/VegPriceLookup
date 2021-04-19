@@ -134,7 +134,7 @@ export default function Finder() {
           />
           <button
             type="submit"
-            class="btn btn-outline-primary ml-2 mr-2  flex-grow-1"
+            className="btn btn-outline-primary ml-2 mr-2  flex-grow-1"
             style={{ fontSize: "1rem", width: "4rem" }}
           >
             查詢

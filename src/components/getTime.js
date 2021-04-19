@@ -1,6 +1,6 @@
 export default function getTime(daysPrior = false) {
   let currentTime = new Date();
-  console.log(currentTime);
+
   if (daysPrior) {
     let time = new Date().setDate(currentTime.getDate() - daysPrior);
     currentTime = new Date(time);

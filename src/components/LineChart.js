@@ -52,8 +52,8 @@ export default function LineChart({ cropData }) {
       const xaxis = d3
         .axisBottom()
         .scale(x)
-        .tickFormat(d3.timeFormat("%m/%d"))
-        .ticks(Math.max((w / 80).toFixed(0), 5));
+        .ticks(Math.max((w / 100).toFixed(0), 5))
+        .tickFormat(d3.timeFormat("%m/%d"));
 
       svg
         .append("g")
