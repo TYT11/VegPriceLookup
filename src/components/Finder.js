@@ -59,69 +59,88 @@ export default function Finder() {
   };
 
   return (
-    <div>
-      <div>
-        <div>臺灣近期菜價查詢</div>
-        <div>Taiwan Produce Recent Price Lookup</div>
+    <div className="mt-4">
+      <div className="mb-3">
+        <div className="h3">臺灣近期菜價查詢</div>
+        <div className="h5">Taiwan Produce Recent Price Lookup</div>
       </div>
       <form
+        className="mb-3"
         onSubmit={(e) => {
           e.preventDefault();
           handleSubmit();
         }}
       >
-        <select
-          value={crop.crop}
-          onChange={(e) => {
-            setCrop((prev) => {
-              return { ...prev, crop: e.target.value };
-            });
-          }}
-        >
-          {veggies.map((veggie) => (
-            <option key={veggie} value={veggie}>
-              {veggie}
-            </option>
-          ))}
-        </select>
-        <select
-          name=""
-          id=""
-          onChange={(e) => {
-            setCrop((prev) => {
-              return { ...prev, city: e.target.value };
-            });
-          }}
-          value={crop.city}
-        >
-          {cities.map((city) => (
-            <option key={city} value={city}>
-              {city}
-            </option>
-          ))}
-        </select>
-        <input
-          type="date"
-          min={daysPrior}
-          defaultValue={daysPrior}
-          onChange={(e) => {
-            setCrop((prev) => {
-              return { ...prev, startDate: getRepublic(e.target.value) };
-            });
-          }}
-        />{" "}
-        至{" "}
-        <input
-          type="date"
-          max={today}
-          defaultValue={today}
-          onChange={(e) => {
-            setCrop((prev) => {
-              return { ...prev, endDate: getRepublic(e.target.value) };
-            });
-          }}
-        />
-        <button type="submit">FIND</button>
+        <div className="mt-2">
+          <label htmlFor="crop">項目：</label>
+          <select
+            id="crop"
+            className="mr-2"
+            value={crop.crop}
+            onChange={(e) => {
+              setCrop((prev) => {
+                return { ...prev, crop: e.target.value };
+              });
+            }}
+          >
+            {veggies.map((veggie) => (
+              <option key={veggie} value={veggie}>
+                {veggie}
+              </option>
+            ))}
+          </select>
+          <label htmlFor="city">地區：</label>
+          <select
+            className="mr-2"
+            name=""
+            id="city"
+            onChange={(e) => {
+              setCrop((prev) => {
+                return { ...prev, city: e.target.value };
+              });
+            }}
+            value={crop.city}
+          >
+            {cities.map((city) => (
+              <option key={city} value={city}>
+                {city}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="mt-2 d-flex justify-content-center align-items-center">
+          <input
+            className="ml-2 mr-2"
+            type="date"
+            min={daysPrior}
+            defaultValue={daysPrior}
+            onChange={(e) => {
+              setCrop((prev) => {
+                return { ...prev, startDate: getRepublic(e.target.value) };
+              });
+            }}
+          />{" "}
+          至{" "}
+          <input
+            className="ml-2 mr-2"
+            type="date"
+            max={today}
+            defaultValue={today}
+            onChange={(e) => {
+              setCrop((prev) => {
+                return { ...prev, endDate: getRepublic(e.target.value) };
+              });
+            }}
+          />
+          <button
+            type="submit"
+            class="btn btn-outline-primary ml-2 mr-2"
+            style={{ fontSize: "1rem", width: "5rem" }}
+          >
+            查詢
+          </button>
+        </div>
       </form>
 
       <Chart cropData={cropData} />
