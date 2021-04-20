@@ -8,18 +8,7 @@ import Chart from "./Chart";
 export default function Finder() {
   const today = getTime();
   const daysPrior = getTime(31);
-  const cities = [
-    "",
-    "台北",
-    "台中",
-    "南投",
-    "屏東",
-    "高雄",
-    "嘉義",
-    "台南",
-    "台東",
-    "花蓮",
-  ];
+  const cities = ["", "台北", "台中", "屏東", "高雄", "台東", "花蓮"];
   const veggies = [
     "",
     "嫩薑",
@@ -40,7 +29,6 @@ export default function Finder() {
     "萵苣菜",
     "芥藍菜",
     "花椰菜",
-    "筊白筍",
   ];
   const [crop, setCrop] = useState({
     crop: "",
@@ -61,7 +49,6 @@ export default function Finder() {
     <div className="mt-4">
       <div className="mb-3">
         <div className="h3">近期菜價查詢</div>
-        <div className="h5">Produce Recent Price Lookup</div>
       </div>
       <form
         className="mb-3"
@@ -74,7 +61,7 @@ export default function Finder() {
           <label htmlFor="crop">項目：</label>
           <select
             id="crop"
-            className="mr-2"
+            className="mr-2 form-select form-select-sm"
             value={crop.crop}
             onChange={(e) => {
               setCrop((prev) => {
@@ -90,7 +77,7 @@ export default function Finder() {
           </select>
           <label htmlFor="city">地區：</label>
           <select
-            className="mr-2"
+            className="mr-2 form-select form-select-sm"
             name=""
             id="city"
             onChange={(e) => {
