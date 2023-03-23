@@ -39,7 +39,7 @@ export default function Finder() {
   const [cropData, setCropData] = useState([]);
 
   const handleSubmit = () => {
-    const api = `https://agridata.coa.gov.tw/api/v1/AgriProductsTransType/?Start_time=${crop.startDate}&End_time=${crop.endDate}&MarketName=${crop.city}&CropName=${crop.crop}`;
+    const api = `https://data.coa.gov.tw/api/v1/AgriProductsTransType/?Start_time=${crop.startDate}&End_time=${crop.endDate}&MarketName=${crop.city}&CropName=${crop.crop}`;
     axios.get(api).then((res) => {
       setCropData(res.data.Data);
     });
