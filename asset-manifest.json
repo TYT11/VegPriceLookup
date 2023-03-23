@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/VegPriceLookup/static/css/main.587db0f7.chunk.css",
-    "main.js": "/VegPriceLookup/static/js/main.74060222.chunk.js",
-    "main.js.map": "/VegPriceLookup/static/js/main.74060222.chunk.js.map",
+    "main.js": "/VegPriceLookup/static/js/main.356d7608.chunk.js",
+    "main.js.map": "/VegPriceLookup/static/js/main.356d7608.chunk.js.map",
     "runtime-main.js": "/VegPriceLookup/static/js/runtime-main.696018b6.js",
     "runtime-main.js.map": "/VegPriceLookup/static/js/runtime-main.696018b6.js.map",
     "static/css/2.ef9168ec.chunk.css": "/VegPriceLookup/static/css/2.ef9168ec.chunk.css",
-    "static/js/2.3a1ad217.chunk.js": "/VegPriceLookup/static/js/2.3a1ad217.chunk.js",
-    "static/js/2.3a1ad217.chunk.js.map": "/VegPriceLookup/static/js/2.3a1ad217.chunk.js.map",
+    "static/js/2.55b0c557.chunk.js": "/VegPriceLookup/static/js/2.55b0c557.chunk.js",
+    "static/js/2.55b0c557.chunk.js.map": "/VegPriceLookup/static/js/2.55b0c557.chunk.js.map",
     "index.html": "/VegPriceLookup/index.html",
     "static/css/2.ef9168ec.chunk.css.map": "/VegPriceLookup/static/css/2.ef9168ec.chunk.css.map",
     "static/css/main.587db0f7.chunk.css.map": "/VegPriceLookup/static/css/main.587db0f7.chunk.css.map",
-    "static/js/2.3a1ad217.chunk.js.LICENSE.txt": "/VegPriceLookup/static/js/2.3a1ad217.chunk.js.LICENSE.txt"
+    "static/js/2.55b0c557.chunk.js.LICENSE.txt": "/VegPriceLookup/static/js/2.55b0c557.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.696018b6.js",
     "static/css/2.ef9168ec.chunk.css",
-    "static/js/2.3a1ad217.chunk.js",
+    "static/js/2.55b0c557.chunk.js",
     "static/css/main.587db0f7.chunk.css",
-    "static/js/main.74060222.chunk.js"
+    "static/js/main.356d7608.chunk.js"
   ]
 }
